@@ -11,7 +11,8 @@ if (!emailDomain || !targetUrl) {
     throw new Error('SUBSCRIBER_EMAIL_DOMAIN and TARGET_URL environment variables must be set.');
 }
 
-const userAgent = faker.internet.userAgent();
+// const userAgent = faker.internet.userAgent();
+const userAgent = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/136.0.0.0 Safari/537.36";
 const subscriberEmail = faker.internet.email({ provider: emailDomain });
 
 console.log(`User Agent: ${userAgent}`);
